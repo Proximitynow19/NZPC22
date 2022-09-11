@@ -11,7 +11,7 @@ def verify(index, available, preserve):
         if t:
             return True
         available[index + 1] += 1
-    if index == preserve and available[preserve] == 0 and sum(available) == 0:
+    if index == preserve and sum(available) == 0:
         return True
     else:
         return False
